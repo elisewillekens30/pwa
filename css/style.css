@@ -1,0 +1,224 @@
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@1,500&display=swap');
+
+body{
+    font-family: 'Noto Sans JP', sans-serif;
+    text-align: center;
+    font-size: x-large;
+    overflow-x: hidden;
+}
+
+
+#bg-form{
+  background: url(../img/bg.jpg) no-repeat;
+  background-size: cover;
+  height: 100vh;
+}
+#game{
+    width: 100vw;
+    height: 100vh;
+    margin-left:-10px;
+    margin-top:-9vh;
+}
+#jauge{
+  margin: 20px 0;
+}
+section{
+    display: flex;
+    flex-direction: column;
+    height: 80vh;
+}
+
+.score{
+  margin: 50px 0;
+}
+.score p{
+  font-size: 11pt;
+  font-weight: 700;
+  margin: 0;
+}
+
+h1{
+  margin-top: 50px;
+}
+
+button{
+  /*margin-left: calc(50% - 96px);*/
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 18pt;
+    width: 200px;
+    height: 50px;
+    border: 2px solid #333;
+    background-color: #333;
+    color: #fff;
+    box-shadow: 4px 4px  #000;
+    -webkit-transition: all .3s;
+    transition: all .3s;
+  }
+
+  a{
+    color: #fff;
+  }
+
+  button:active{
+    box-shadow: 8px 8px #000;
+    color: #fff;
+  }
+  
+ button:before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0%;
+    height: 100%;
+    background-color: #474747;
+    color: black;
+    -webkit-transition: all .3s;
+    transition: all .3s;
+    z-index: -1;
+  }
+  
+  button:hover:before {
+    width: 100%;
+    height: 100%;
+  }
+
+  i{
+    font-size: 80px!important;
+  }
+
+
+  .buttons-div{
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+
+  }
+
+  #left:active,
+  #right:active,
+  #up:active{
+    transform: scale(1.1);
+  }
+
+  #left,
+  #right,
+  #up{
+    position: relative;
+    z-index: 10;
+    margin: -90px 2% 0 2%;
+    /*color:#fff;*/
+    padding: 0;
+   
+    transition: transform .2s;
+  }
+
+  
+  
+  /* Slider Switch Checkbox */
+  
+  .switch {
+    position: relative;
+    display: flex;
+    align-content: center;
+    width: 60px;
+    height: 34px;
+    margin-left: calc(50% - 30px);
+    margin-bottom: 50px;
+  }
+  
+  .switch input {
+    /* This makes the default checkbox disappear */
+    opacity: 0;
+    width: 0px;
+    height: 0px;
+    margin-left: calc(100px - 50% );
+  }
+  
+  .toggle {
+    position: absolute;
+    cursor: pointer;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    padding: 1px 1px 1px 1px;
+    border: 1px solid #C0C0C0;
+    height: 34px;
+    border-radius: 20px;
+  
+    /* WebKit */
+    -webkit-transition: 0.5s;
+    /* Mozilla */
+    -moz-transition: 0.5s;
+    /* Opera */
+    -o-transition: 0.5s;
+    /* Internet Explorer */
+    -ms-transition: 0.5s;
+    /* CSS3 */
+    transition: 0.5s;
+  }
+  
+  .toggle:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 5px;
+    bottom: 5px;
+    background-color: #000000;
+    border-radius: 20px;
+  
+    /* WebKit */
+    -webkit-transition: 0.5s;
+    /* Mozilla */
+    -moz-transition: 0.5s;
+    /* Opera */
+    -o-transition: 0.5s;
+    /* Internet Explorer */
+    -ms-transition: 0.5s;
+    /* CSS3 */
+    transition: 0.5s;
+  
+  }
+  
+  input:checked+.toggle {
+    background-color: rgb(104, 209, 216);
+  }
+  
+  input:checked+.toggle:before {
+    /* WebKit */
+    -webkit-transform: translateX(26px);
+    /* Mozilla */
+    -moz-transform: translateX(26px);
+    /* Opera */
+    -o-transform: translateX(26px);
+    /* Internet Explorer */
+    -ms-transform: translateX(26px);
+    /* CSS3 */
+    transform: translateX(26px);
+  }
+  
+  /* Select Styling*/
+  select {
+    width: 200px;
+    padding: 5px 5px 5px 5px;
+    font-size: 16px;
+    border: 1px solid #C0C0C0;
+    height: 34px;
+    border-radius: 20px;
+  
+    /* WebKit */
+    -webkit-appearance: none;
+    /* Mozilla */
+    -moz-appearance: none;
+    /* Opera */
+    -o-appearance: none;
+    /* Internet Explorer */
+    -ms-appearance: none;
+    /* CSS3 */
+    appearance: none;
+  }

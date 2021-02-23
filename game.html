@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>GameLoop Example</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="HTML5 GameLoop Template">
+    <meta name="author" content="UI Programming">
+
+    <!--StyleSheet-->
+    <link rel="stylesheet" href="./css/style.css">
+    <link href='https://fonts.googleapis.com/css?family=Orbitron' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body onload="pageLoaded()" >
+  <div id="container">
+
+    <h1>Super Mario 256</h1> 
+    <h2>Hi <span id="playerName"></span>!</h2>
+    <h3>Your score: <span id="score"></span></h3>
+
+    <canvas id="jauge" width="700" height="20">
+        Oops! looks like your browser does not support canvas tag
+    </canvas>
+
+  <canvas id="game" width="1300" height="600" style="border: black 1px solid;">
+      Oops! looks like your browser does not support canvas tag
+  </canvas>
+
+  <div class="buttons-div">
+    <div id="left">
+      <i class="fa fa-toggle-left"></i>
+    </div>
+    <div id="up">
+      <i class="fa fa-toggle-up"></i>
+    </div>
+    <div id="right">
+      <i class="fa fa-toggle-right"></i>
+    </div>
+  </div>
+
+  
+  <div class="score">
+    <p>Last Score</p>
+    <p>Name: <span id="highName"></span></p>
+    <p>Score: <span id="highScore"></span></p>
+  </div>
+  
+
+  <button><a href="game.html">Play Again</a></button>
+  <button><a href="#" onclick="pageLoaded()">Settings</a></button>
+  
+</div>
+</body>
+    <script src="js/script.js"></script>
+</html>
