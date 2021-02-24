@@ -1,7 +1,7 @@
 var cacheName = 'muddygames-pwa';
 var filesToCache = [
   '/',
-  'index.html',
+  'pwa/index.html',
   'game.html',
   'css/style.css',
   'js/script.js'
