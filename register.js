@@ -3,6 +3,6 @@ window.onload = () => {
   
     if ('serviceWorker' in navigator) {
       navigator.serviceWorker
-               .register('service_worker.js');
+               .register('https://elisewillekens30.github.io/pwa/service_worker.js');
     }
   }
