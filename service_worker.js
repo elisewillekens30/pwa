@@ -1,4 +1,4 @@
-var cacheName = 'mario-pwa';
+var cacheName = 'mariopwa';
 var filesToCache = [
   '/',
   'https://elisewillekens30.github.io/pwa/index.html',
