@@ -1,10 +1,10 @@
-var cacheName = 'muddygames-pwa';
+var cacheName = 'mario-pwa';
 var filesToCache = [
   '/',
-  'pwa/index.html',
+  'https://elisewillekens30.github.io/pwa/index.html',
   'game.html',
-  'css/style.css',
-  'js/script.js'
+  'https://elisewillekens30.github.io/pwa/css/style.css',
+  'https://elisewillekens30.github.io/pwa/js/script.js'
 ];
 
 /* Cache contents when Offline See Cache */
