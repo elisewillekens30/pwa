@@ -16,6 +16,8 @@ self.addEventListener('install', function(e) {
   );
 });
 
+console.log(filesToCache):
+
 /* Serve cached content when offline, examine Cache Storage */
 self.addEventListener('fetch', function(e) {
   e.respondWith(
