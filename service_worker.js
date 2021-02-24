@@ -1,7 +1,7 @@
 var cacheName = 'muddygames-pwa';
 var filesToCache = [
   '/',
-  'pwa/index.html',
+  'https://elisewillekens30.github.io/pwa/index.html',
   'game.html',
   'css/style.css',
   'js/script.js'
