@@ -1,6 +1,5 @@
 var cacheName = 'mariopwa';
 var filesToCache = [
-  '/',
   'https://elisewillekens30.github.io/pwa/index.html',
   'game.html',
   'https://elisewillekens30.github.io/pwa/css/style.css',
