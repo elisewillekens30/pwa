@@ -37,6 +37,5 @@
     "background_color": "#000000",
     "display": "minimal-ui",
     "orientation": "landscape",
-    "scope": "/",
     "start_url": "https://elisewillekens30.github.io/pwa/index.html"
 }
